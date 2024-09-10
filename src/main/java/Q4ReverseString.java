@@ -16,7 +16,7 @@ public class Q4ReverseString {
         return "";*/
 
         //Recusrion Version
-        
+
         String rString="";
         int len = s.length();
         String newS="";
@@ -31,7 +31,6 @@ public class Q4ReverseString {
         return rString;
     }
 
-
 public static void main(String args[]){
-    reverse("Alex");
-}}
+    reverse("Hello Alex");
+    }}
