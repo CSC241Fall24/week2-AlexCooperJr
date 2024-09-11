@@ -14,15 +14,19 @@ public class Q1WeirdFunction {
     }
 
     public static int fIterative(int n) {
+        int sum=0;
         if(n<3){
             return n;
         }
         else{
-            int x = 0;
+            for(int i=n;i>=3;i--){
+                sum+=((i-1)+(2*(i-2))+(3*(i-3)));
+            }
         }
-        return 0;
+        return sum;
     }
 
 public static void main(String args[]){
-    System.out.println(fRecursive(4));
+    System.out.println(fRecursive(7));
+    System.out.println(fIterative(7));
 }}

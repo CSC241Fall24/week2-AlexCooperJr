@@ -1,7 +1,9 @@
 // src/main/java/Q4ReverseString.java
 
 public class Q4ReverseString {
-
+    public static void main(String[] args) {
+        reverse("Test String!");
+    }
     public static String reverse(String s) {
         // TODO: Implement the recursive function to reverse the string
         // For Loop Version
@@ -30,7 +32,4 @@ public class Q4ReverseString {
             reverse(newS);}
         return rString;
     }
-
-public static void main(String args[]){
-    reverse("Hello Alex");
-    }}
+}

@@ -10,8 +10,8 @@ public class Q3PrintArrayBackwards {
         // Hint: The base case is when i <= 0
         // Hint: Print the element after the recursive call
         if(i>0){
-            printRecursion(i-1);
             System.out.println(array[i-1]);
+            printRecursion(i-1);
         }
     }
 }
