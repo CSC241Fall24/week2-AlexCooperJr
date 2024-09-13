@@ -2,7 +2,7 @@
 
 public class Q4ReverseString {
     public static void main(String[] args) {
-        reverse("Test String!");
+        reverse("test string");
     }
     public static String reverse(String s) {
         // TODO: Implement the recursive function to reverse the string
@@ -19,17 +19,12 @@ public class Q4ReverseString {
 
         //Recusrion Version
 
-        String rString="";
         int len = s.length();
-        String newS="";
-        if(len>0){
-            System.out.print(s.charAt(len-1));
-            rString+=s.charAt(len-1);
-    
-            for(int i =0;i<len-1;i++){
-                newS+=s.charAt(i);
-            }
-            reverse(newS);}
-        return rString;
+        if(len<=0){
+            return s;}
+        
+        else{
+            
+            return (reverse(s.substring(1, len))+(s.charAt(0)+""));}
     }
 }
